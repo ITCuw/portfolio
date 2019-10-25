@@ -1,0 +1,35 @@
+html, body{
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.container{
+  display: flex;
+  flex-direction: column;
+}
+
+.header{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
+  font-family: sans-serif;
+  font-size: 12px;
+  font-weight: lighter;
+}
+
+.name{
+  padding-left: 22px;
+}
+
+.navigation{
+  padding-right: 22px;
+}
+
+.doggo{
+  height: auto;
+  width: auto;
+  align-self: center;
+}
