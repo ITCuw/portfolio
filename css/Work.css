@@ -125,7 +125,7 @@ p a {
 }
 
 /*/////////////////////
-GENERAL CONTENT DIV CSS
+MOBILE CSS
 /////////////////////*/
 @media screen and (max-width: 760px){
   h2{
@@ -209,6 +209,10 @@ GENERAL CONTENT DIV CSS
     filter:blur(4px);
     opacity: .5;
   }
+  #content div:focus img{
+    filter:blur(4px);
+    opacity: .5;
+  }
 
 /* ONE */
   .one{
@@ -229,6 +233,9 @@ GENERAL CONTENT DIV CSS
   }
 
   .one:hover :not(img){
+    opacity: 1;
+  }
+  .one:focus :not(img){
     opacity: 1;
   }
 
@@ -264,6 +271,9 @@ GENERAL CONTENT DIV CSS
   }
 
   .two:hover :not(img){
+    opacity: 1;
+  }
+  .two:focus :not(img){
     opacity: 1;
   }
 
@@ -302,6 +312,9 @@ GENERAL CONTENT DIV CSS
   .three:hover :not(img){
     opacity: 1;
   }
+  .three:focus :not(img){
+    opacity: 1;
+  }
 
   .three h3{
     padding-top: 210px;
@@ -338,6 +351,9 @@ GENERAL CONTENT DIV CSS
   }
 
   .four:hover :not(img){
+    opacity: 1;
+  }
+  .four:focus :not(img){
     opacity: 1;
   }
 
@@ -397,6 +413,10 @@ GENERAL CONTENT DIV CSS
       opacity: .5;
     }
 
+    #content div:focus img{
+      filter:blur(4px);
+      opacity: .5;
+    }
   /* ONE */
     .one{
       display: flex;
@@ -416,6 +436,9 @@ GENERAL CONTENT DIV CSS
     }
 
     .one:hover :not(img){
+      opacity: 1;
+    }
+    .one:focus :not(img){
       opacity: 1;
     }
 
@@ -453,6 +476,9 @@ GENERAL CONTENT DIV CSS
     .two:hover :not(img){
       opacity: 1;
     }
+    .two:focus :not(img){
+      opacity: 1;
+    }
 
     .two h3{
       padding-top: 210px;
@@ -487,6 +513,9 @@ GENERAL CONTENT DIV CSS
     }
 
     .three:hover :not(img){
+      opacity: 1;
+    }
+    .three:focus :not(img){
       opacity: 1;
     }
 
@@ -527,7 +556,9 @@ GENERAL CONTENT DIV CSS
     .four:hover :not(img){
       opacity: 1;
     }
-
+    .four:focus :not(img){
+      opacity: 1;
+    }
     .four h3{
       padding-top: 180px;
     }
