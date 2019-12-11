@@ -209,7 +209,7 @@ MOBILE CSS
     filter:blur(4px);
     opacity: .5;
   }
-  #content div:focus img{
+  #content div:active img{
     filter:blur(4px);
     opacity: .5;
   }
@@ -235,7 +235,7 @@ MOBILE CSS
   .one:hover :not(img){
     opacity: 1;
   }
-  .one:focus :not(img){
+  .one:active :not(img){
     opacity: 1;
   }
 
@@ -273,7 +273,7 @@ MOBILE CSS
   .two:hover :not(img){
     opacity: 1;
   }
-  .two:focus :not(img){
+  .two:active :not(img){
     opacity: 1;
   }
 
@@ -312,7 +312,7 @@ MOBILE CSS
   .three:hover :not(img){
     opacity: 1;
   }
-  .three:focus :not(img){
+  .three:active :not(img){
     opacity: 1;
   }
 
@@ -353,7 +353,7 @@ MOBILE CSS
   .four:hover :not(img){
     opacity: 1;
   }
-  .four:focus :not(img){
+  .four:active :not(img){
     opacity: 1;
   }
 
@@ -413,7 +413,7 @@ MOBILE CSS
       opacity: .5;
     }
 
-    #content div:focus img{
+    #content div:active img{
       filter:blur(4px);
       opacity: .5;
     }
@@ -438,7 +438,7 @@ MOBILE CSS
     .one:hover :not(img){
       opacity: 1;
     }
-    .one:focus :not(img){
+    .one:active :not(img){
       opacity: 1;
     }
 
@@ -476,7 +476,7 @@ MOBILE CSS
     .two:hover :not(img){
       opacity: 1;
     }
-    .two:focus :not(img){
+    .two:active :not(img){
       opacity: 1;
     }
 
@@ -515,7 +515,7 @@ MOBILE CSS
     .three:hover :not(img){
       opacity: 1;
     }
-    .three:focus :not(img){
+    .three:active :not(img){
       opacity: 1;
     }
 
@@ -556,7 +556,7 @@ MOBILE CSS
     .four:hover :not(img){
       opacity: 1;
     }
-    .four:focus :not(img){
+    .four:active :not(img){
       opacity: 1;
     }
     .four h3{
