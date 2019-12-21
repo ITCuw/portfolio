@@ -1,0 +1,245 @@
+/* Universal */
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,500,700|Oswald:400,500,600,700&display=swap');
+
+#modal h1 {
+  font-size: 25px;
+  font-family: 'Oswald', sans-serif;
+  font-weight: 400;
+  color: black;
+}
+
+#modal{
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left:0;top:0;
+  width: 100%;
+  height:100%;
+  overflow: auto;
+  justify-content: center;
+  background-color: rgba(0,0,0, 0.5);
+}
+
+#modal .modal-content {
+  width: 990px;
+  height: 743px;
+  animation-name: modalopen;
+  animation-duration: 1s;
+  background: black;
+  position: relative;
+}
+@keyframes modalopen{
+  from{opacity: 0}
+  to{opacity: 1}
+}
+
+/* slider */
+.slide_img{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+.slide_img img{
+  width: 990px;
+  height: 743px;
+}
+#i1, #i2, #i3{
+  display: none;
+}
+.pre, .nxt{
+  width:6%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  cursor: pointer;
+  z-index: 99;
+}
+.pre{
+  left: 0;
+}
+.nxt{
+  right:0;
+}
+.dot-nav{
+  width: 100%;
+  height: 11px;
+  bottom: 5%;
+  position: absolute;
+  text-align: center;
+  z-index: 99;
+}
+.dot{
+  top:-5px;
+  width: 16px;
+  height: 16px;
+  margin: 0 4px;
+  position: relative;
+  border-radius: 50%;
+  display: inline-block;
+  background: rgba(0,0,0,.4);
+}
+
+.slide_img{
+  z-index: -1;
+}
+#i1:checked ~ #one,
+#i2:checked ~ #two,
+#i3:checked ~ #three {
+  z-index: 9;
+}
+#i1:checked ~ .dot-nav #dot1,
+#i2:checked ~ .dot-nav #dot2,
+#i3:checked ~ .dot-nav #dot3{
+  background: black;
+}
+label{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+i {
+  border: solid black;
+  border-width: 0 3px 3px 0;
+  display: inline-block;
+  padding: 10px;
+}
+.right {
+  transform: rotate(-45deg);
+  -webkit-transform: rotate(-45deg);
+}
+.left {
+  transform: rotate(135deg);
+  -webkit-transform: rotate(135deg);
+}
+/* close button */
+.closeBtn{
+  z-index: 100;
+  right: 0;
+  position: absolute;
+  padding-right: 15px;
+  margin: 0;
+  color: rgb(88,88,88,.2);
+  font-size: 40px;
+}
+
+.closeBtn:hover, .closeBtn:active{
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+/* phone specific size */
+@media screen and (max-width: 760px){
+  #modal .modal-content {
+    width: 100vw;
+    top: -40vh;
+    height: auto;
+    animation-name: modalopen;
+    animation-duration: 1s;
+    background: black;
+    position: relative;
+  }
+  label{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .pre, .nxt{
+    width:8%;
+    height: 100%;
+    position: absolute;
+    top: 30vh;
+    cursor: pointer;
+    z-index: 99;
+  }
+  .closeBtn{
+    z-index: 100;
+    right: 0;
+    position: absolute;
+    padding-right: 15px;
+    margin: 0;
+    color: black;
+    font-size: 26px;
+  }
+  i {
+    border: solid black;
+    border-width: 0 2px 2px 0;
+    display: inline-block;
+    padding: 5px;
+  }
+  .dot-nav{
+    display: flex;
+    padding-top: 10px;
+    flex-direction: row;
+    height:5px;
+    width: 100%;
+    justify-content:center;
+    align-items: flex-end;
+    position: relative;
+    text-align: center;
+    z-index: 99;
+  }
+  .dot{
+    top:-5px;
+    width: 6px;
+    height: 6px;
+    margin: 0 4px;
+    position: relative;
+    border-radius: 50%;
+    display: inline-block;
+    background: rgba(0,0,0,.4);
+  }
+  .slide_img img{
+    width: 100vw;
+    top: -40vh;
+    height: auto;
+  }
+}
+
+/* tablet specific size*/
+@media screen and (min-width: 760px) and (max-width:1008px){
+  #modal .modal-content {
+    width: 750px;
+    height: 563px;
+    animation-name: modalopen;
+    animation-duration: 1s;
+    background: black;
+    position: relative;
+  }
+  .closeBtn{
+    z-index: 100;
+    right: 0;
+    position: absolute;
+    padding-right: 15px;
+    margin: 0;
+    color: rgb(88,88,88,.2);
+    font-size: 40px;
+  }
+  i {
+    border: solid black;
+    border-width: 0 3px 3px 0;
+    display: inline-block;
+    padding: 10px;
+  }
+  .dot-nav{
+    width: 100%;
+    height: 11px;
+    bottom: 5%;
+    position: absolute;
+    text-align: center;
+    z-index: 99;
+  }
+  .dot{
+    top:-5px;
+    width: 9px;
+    height: 9px;
+    margin: 0 4px;
+    position: relative;
+    border-radius: 50%;
+    display: inline-block;
+    background: rgba(0,0,0,.4);
+  }
+  .slide_img img{
+    width: 750px;
+    height: 563px;
+  }
+}
