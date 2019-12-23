@@ -21,8 +21,8 @@
 }
 
 #modal .modal-content {
-  width: 990px;
-  height: 743px;
+  width: 800px;
+  height: 601px;
   animation-name: modalopen;
   animation-duration: 1s;
   background: black;
@@ -40,8 +40,8 @@
   height: 100%;
 }
 .slide_img img{
-  width: 990px;
-  height: 743px;
+  width: 800px;
+  height: 601px;
 }
 #i1, #i2, #i3{
   display: none;
@@ -70,8 +70,8 @@
 }
 .dot{
   top:-5px;
-  width: 16px;
-  height: 16px;
+  width: 10px;
+  height: 10px;
   margin: 0 4px;
   position: relative;
   border-radius: 50%;
