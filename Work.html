@@ -18,8 +18,12 @@
         <h2 class="navigation-about"><a href="About.html">About</a></h2>
       </div>
     </div>
-
   <div class="portfolio">
+    <div class="headerContaner">
+    <p class="headerContent"> Everything you see on this website is designed and coded by me using Adobe
+      Illustrator, Adobe Photoshop, HTML, CSS & Javascript. Checkout my
+      <a class="headerLink" href="https://github.com/ITCuw/portfolio">Github</a> Repo for code!</p>
+    </div>
       <div id="content">
 <!-- Vimocity -->
         <div onclick="this.style['opacity'] = '1';" class="one">
@@ -27,19 +31,53 @@
             <h6>Vimocity - Software Engineering Intern</h6>
             <p>Vimocity, an established B2B tech startup in Seattle, needed me to both design and
               build a data dashboard for their clients to track progress with Vimocity.</p>
-            <h3>React JS - Node.js - Google Analytics API - Figma - User Research - GitHub</h3>
-            <a id='readMore'>Read More</a>
+            <h3>Figma - User Research - Google Analytics API - Full Stack Development - GitHub</h3>
+            <a class='openBtn btn' id='vimocityOpen'>Read More</a>
         </div>
-        <div id="modal">
+<!-- TheRadar -->
+        <div onclick="this.style['opacity'] = '1';" class="two">
+          <img class="img-thumb" src="./Img/TheRadar-Iphone-Home.png"/>
+            <h6>TheRadar - Personal Project</h6>
+            <p>TheRadar is a personal project I started last year with the goal of exploring my passion for strengthening
+              and building communities of people. </p>
+            <h3>Adobe XD- Mockups - User Research - Full Stack Development - GitHub</h3>
+            <a class='openBtn btn' id='radarOpen'>Read More</a>
+        </div>
+<!-- iAnimals -->
+        <div id="thumbnail" class="three">
+          <img class="img-thumb" src="./Img/iAnimals.png"/>
+            <h6>iAnimals - Personal Project</h6>
+            <p>iAnimals is all about helping animal shelters and vets. A class project that me and a few friends took
+            to the next level.</p>
+            <h3>Figma- Mockups - User Interviews - User Research</h3>
+            <a class='openBtn' id='ianimalsOpen'>Details Coming Soon</a>
+        </div>
+<!-- DataLab -->
+        <div id="thumbnail" class="four">
+          <img class="img-thumb" src="./Img/DataLab.png"/>
+            <h6>University of Washington - Data Lab Research Intern</h6>
+            <p>It was an honor to work as a research assistant to two of the most prominent names in fake news research,
+            Kate Starbird and Emma Spiro. For a summer, we studied how rumors permutate on social media during crisis events.</p>
+            <h3>Quantitative Data Proccessing Design - Data Analysis in R - Excel - Team Research</h3>
+            <a class='openBtn' id='datalabOpen'>Details Coming Soon</a>
+        </div>
+        <div class="modal" id="modal">
           <div class="modal-content">
               <span class="closeBtn">&times;</span>
               <div class="slider-container">
-                <input type="radio" name="images" id="i1" checked>
-                <input type="radio" name="images" id="i2">
-                <input type="radio" name="images" id="i3">
+                <input type="radio" name="images" id="i1" class="slide" checked>
+                <input type="radio" name="images" id="i2" class="slide">
+                <input type="radio" name="images" id="i3" class="slide">
+                <input type="radio" name="images" id="i4" class="slide">
+                <input type="radio" name="images" id="i5" class="slide">
+                <input type="radio" name="images" id="i6" class="slide">
+                <input type="radio" name="images" id="i7" class="slide">
+                <input type="radio" name="images" id="i8" class="slide">
+                <input type="radio" name="images" id="i9" class="slide">
+                <input type="radio" name="images" id="i10" class="slide">
                 <div class="slide_img" id="one">
                   <img src="./Img/Vim-About.png" alt="SliderImg1">
-                  <label for="i3" class="pre"><i class="arrow left"></i></label>
+                  <label for="i5" class="pre"><i class="arrow left"></i></label>
                   <label for="i2" class="nxt"><i class="arrow right"></i></label>
                 </div>
                 <div class="slide_img" id="two">
@@ -48,46 +86,52 @@
                   <label for="i3" class="nxt"><i class="arrow right"></i></label>
                 </div>
                 <div class="slide_img" id="three">
-                  <img src="./Img/Vim-Personas.png" alt="SliderImg1">
+                  <img src="./Img/Vim-Personas.png" alt="SliderImg3">
                   <label for="i2" class="pre"><i class="arrow left"></i></label>
+                  <label for="i4" class="nxt"><i class="arrow right"></i></label>
+                </div>
+                <div class="slide_img" id="four">
+                  <img src="./Img/Vim-Mockups.png" alt="SliderImg4">
+                  <label for="i3" class="pre"><i class="arrow left"></i></label>
+                  <label for="i5" class="nxt"><i class="arrow right"></i></label>
+                </div>
+                <div class="slide_img" id="five">
+                  <img src="./Img/Vim-Dev.png" alt="SliderImg5">
+                  <label for="i4" class="pre"><i class="arrow left"></i></label>
                   <label for="i1" class="nxt"><i class="arrow right"></i></label>
                 </div>
-                <div class="dot-nav">
+                <div class="slide_img" id="six">
+                  <img src="./Img/Radar-Overview.png" alt="SliderImg6">
+                  <label for="i10" class="pre"><i class="arrow left"></i></label>
+                  <label for="i7" class="nxt"><i class="arrow right"></i></label>
+                </div>
+                <div class="slide_img" id="seven">
+                  <img src="./Img/Radar-problem.png" alt="SliderImg7">
+                  <label for="i6" class="pre"><i class="arrow left"></i></label>
+                  <label for="i8" class="nxt"><i class="arrow right"></i></label>
+                </div>
+                <div class="slide_img" id="eight">
+                  <img src="./Img/Radar-personas.png" alt="SliderImg8">
+                  <label for="i7" class="pre"><i class="arrow left"></i></label>
+                  <label for="i9" class="nxt"><i class="arrow right"></i></label>
+                </div>
+                <div class="slide_img" id="nine">
+                  <img src="./Img/Radar-design.png" alt="SliderImg9">
+                  <label for="i8" class="pre"><i class="arrow left"></i></label>
+                  <label for="i10" class="nxt"><i class="arrow right"></i></label>
+                </div>
+                <div class="slide_img" id="ten">
+                  <img src="./Img/Radar-dev.png" alt="SliderImg10">
+                  <label for="i9" class="pre"><i class="arrow left"></i></label>
+                  <label for="i6" class="nxt"><i class="arrow right"></i></label>
                 </div>
               </div>
           </div>
         </div>
-<!-- TheRadar -->
-        <div id="thumbnail" class="two">
-          <img class="img-thumb" src="./Img/TheRadar-Iphone-Home.png"/>
-            <h6>TheRadar - Personal Project</h6>
-            <p>TheRadar is a personal project I started last year with the goal of exploring my passion for strengthening
-              and building communities of people. </p>
-            <h3>React JS - Node.js - Google Analytics API - Figma - User Research</h3>
-            <a id='readMore'>Read More</a>
-        </div>
-<!-- iAnimals -->
-        <div id="thumbnail" class="three">
-          <img class="img-thumb" src="./Img/iAnimals.png"/>
-            <h6>iAnimals - Personal Project</h6>
-            <p>an established B2B tech startup in Seattle, needed me to both design and
-              build a data dashboard for their clients to track progress with Vimocity.</p>
-            <h3>React JS - Node.js - Google Analytics API - Figma - User Research</h3>
-            <a id='readMore'>Read More</a>
-        </div>
-<!-- DataLab -->
-        <div id="thumbnail" class="four">
-          <img class="img-thumb" src="./Img/DataLab.png"/>
-            <h6>University of Washington - Data Lab Research Intern</h6>
-            <p>, an established B2B tech startup in Seattle, needed me to both design and
-              build a data dashboard for their clients to track progress with Vimocity.</p>
-            <h3>React JS - Node.js - Google Analytics API - Figma - User Research</h3>
-            <a id='readMore'>Read More</a>
-        </div>
       </div>
     </div>
     <div class="footer">
-      <h4>follow me on LinkedIn @ Alexanderdumitriu.linkedin.com</h4>
+      <h4>Check me out on <a href="https://www.linkedin.com/in/alexanderdumitriucarcoana">LinkedIn</a>!</h4>
     </div>
   </div>
   <script src="./js/main.js"></script>

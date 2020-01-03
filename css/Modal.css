@@ -1,14 +1,7 @@
 /* Universal */
 @import url('https://fonts.googleapis.com/css?family=Montserrat:400,500,700|Oswald:400,500,600,700&display=swap');
 
-#modal h1 {
-  font-size: 25px;
-  font-family: 'Oswald', sans-serif;
-  font-weight: 400;
-  color: black;
-}
-
-#modal{
+.modal{
   display: none;
   position: fixed;
   z-index: 1;
@@ -20,7 +13,9 @@
   background-color: rgba(0,0,0, 0.5);
 }
 
-#modal .modal-content {
+
+.modal
+.modal-content {
   width: 800px;
   height: 601px;
   animation-name: modalopen;
@@ -28,6 +23,7 @@
   background: black;
   position: relative;
 }
+
 @keyframes modalopen{
   from{opacity: 0}
   to{opacity: 1}
@@ -43,7 +39,7 @@
   width: 800px;
   height: 601px;
 }
-#i1, #i2, #i3{
+#i1, #i2, #i3, #i4, #i5, #i6, #i7, #i8, #i9, #i10{
   display: none;
 }
 .pre, .nxt{
@@ -84,14 +80,18 @@
 }
 #i1:checked ~ #one,
 #i2:checked ~ #two,
-#i3:checked ~ #three {
+#i3:checked ~ #three,
+#i4:checked ~ #four,
+#i5:checked ~ #five,
+#i6:checked ~ #six,
+#i7:checked ~ #seven,
+#i8:checked ~ #eight,
+#i9:checked ~ #nine,
+#i10:checked ~ #ten
+{
   z-index: 9;
 }
-#i1:checked ~ .dot-nav #dot1,
-#i2:checked ~ .dot-nav #dot2,
-#i3:checked ~ .dot-nav #dot3{
-  background: black;
-}
+
 label{
   display: flex;
   justify-content: center;
@@ -129,7 +129,7 @@ i {
 }
 /* phone specific size */
 @media screen and (max-width: 760px){
-  #modal .modal-content {
+  .modal .modal-content{
     width: 100vw;
     top: -40vh;
     height: auto;
@@ -197,7 +197,7 @@ i {
 
 /* tablet specific size*/
 @media screen and (min-width: 760px) and (max-width:1008px){
-  #modal .modal-content {
+  .modal .modal-content {
     width: 750px;
     height: 563px;
     animation-name: modalopen;

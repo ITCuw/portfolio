@@ -10,18 +10,30 @@ html, body{
   padding: 0;
 }
 
+p{
+  font-size: 18px;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+  color: black;
+}
 h2{
   font-size: 20px;
   font-family: 'Montserrat', sans-serif;
   font-weight: 400;
   color: black;
 }
-
+h1{
+  font-size: 25px;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 500;
+  color: black;
+  padding-bottom: 20px;
+}
 h2 a{
     text-decoration: none;
     color: black;
 }
-
+/* NAVIGATION */
 .name{
   margin-left: 29px;
 }
@@ -54,4 +66,30 @@ h2 a{
 
 .name{
   padding-left: 22px;
+}
+/* DOG IMAGE */
+.doggo img{
+  width: auto;
+  height: 160px;
+}
+/* CONTENT */
+.about-container{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.content{
+  padding-top: 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 80%;
+  height: 100%;
+}
+.textcontent{
+  width: 80%;
+}
+.paragraph{
+  padding-bottom: 20px;
 }

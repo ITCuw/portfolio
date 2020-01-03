@@ -11,10 +11,6 @@ html, body{
   margin-left: 29px;
 }
 
-.portfolio{
-padding-bottom: 30px;
-}
-
 *{
   margin: 0;
   padding: 0;
@@ -25,6 +21,13 @@ h2{
   font-family: 'Montserrat', sans-serif;
   font-weight: 400;
   color: black;
+}
+
+h4{
+  font-size: 18px;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+  color: white;
 }
 
 h2 a{
@@ -100,7 +103,24 @@ p a {
 .name{
   padding-left: 22px;
 }
-
+/*// ===================
+// Text blurb
+// ===================*/
+.headerContaner{
+  padding-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  width: 950px;
+}
+.headerLink{
+  color:rgb(139, 138, 138);
+  text-decoration: underline;
+}
+.headerContent{
+  color: rgb(139, 138, 138);
+  font-size: 20px;
+}
 /*// ===================
 // Portfolio
 // ===================*/
@@ -114,6 +134,11 @@ p a {
 
 .portfolio{
   margin-top: 80px;
+  padding-bottom: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
 .one{
@@ -133,6 +158,9 @@ p a {
 MOBILE CSS
 /////////////////////*/
 @media screen and (max-width: 760px){
+  .headerContaner{
+    width: 70%;
+  }
   h2{
     font-size: 20px;
     font-family: 'Montserrat', sans-serif;
@@ -360,6 +388,9 @@ MOBILE CSS
 }
 /* TABLETS CSS */
 @media screen and (min-width: 760px) and (max-width:1008px){
+  .headerContaner{
+    width: 750px;
+  }
   #content{
       display: grid;
       margin: 0 auto;
@@ -641,7 +672,6 @@ MOBILE CSS
   .two {
     display: flex;
     justify-content: center;
-    height: 550px;
   }
 
   .two img{
@@ -753,7 +783,7 @@ MOBILE CSS
 /* FOOTER */
 
 .footer{
-  color: rgb(180, 180, 180);
+  color: white;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -761,4 +791,9 @@ MOBILE CSS
   height: 80px;
   width: 100%;
   margin-top: 20px;
+}
+
+.footer a {
+  text-decoration: underline;
+  color: white;
 }
