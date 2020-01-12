@@ -1,78 +1,378 @@
-@import url('https://fonts.googleapis.com/css?family=Montserrat:400,500,700|Oswald:400,500,600,700&display=swap');
-
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,500,600,700|Oswald:400,500,600,700&display=swap');
+/*General (Font and Screen Layout)*/
 *{
   margin: 0;
   padding: 0;
 }
-
-body {
-  background: url("../Img/Collage/IMG_7435.jpg") no-repeat center center fixed;
-  background-size: contain;
-  background-size: cover;
-}
-
-h2{
-  font-size: 20px;
-  font-family: 'Montserrat', sans-serif;
-  font-weight: 500;
-}
-h1{
-  font-size: 28px;
-  font-family: 'Montserrat', sans-serif;
-  font-weight: 400;
-  color: white;
-  padding-bottom: 10px;
-}
-
-a{
-    text-decoration: none;
-    color: white;
-}
 .container{
   display: flex;
+  height:100%;
   flex-direction: column;
-  width:100%;
-  height: 100%;
+  align-items: center;
 }
-
+h1,
+h2,
+h3,
+h4,
+h5,
+p,
+nav{
+  font-family: 'Montserrat', sans-serif;
+}
+h1{
+  font-size: 5.0vw;
+  font-weight: 700;
+}
+h2{
+  font-size: 3.8vw;
+  font-weight: 600;
+}
+h3,
+p{
+  font-size: 24px;
+  font-weight: 500;
+}
+h4{
+  font-size: 1.3vw;
+  font-weight: 700;
+}
+h5{
+  font-size: 2.0vw;
+  font-weight: 400;
+}
+nav{
+  font-size: 18px;
+  font-weight: 500;
+}
+/* Font Coloring */
+.work a{
+  text-decoration: none;
+  color: white;
+}
+.bannerContainer h1{
+  color: #ff0062;
+  padding-bottom: 30px;
+}
+.bannerContainer h2{
+  color: white;
+}
+.quoteContainerText a{
+  color: inherit;
+}
+.aboutmeGrid h3{
+  color: #2b0071;
+}
+/*Header component with navigation*/
 .header{
+  display: flex;
+  padding-top: 10px;
+  align-items: center;
+  justify-content: center;
+  background-color: #111111;
+  width: 100%;
+  height: 40px;
+  color: white;
+}
+.nav{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: 15%;
+  border-radius: 5px;
+}
+.about,
+.work{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 30px;
+  width: 70px;
+}
+.about{
+  background-color: white;
+  color: #111111;
+  padding-right: 6px;
+}
+.work{
+  border-color: white;
+  padding-left: 6px;
+}
+/*Banner with Name and Tagline*/
+.bannerContainer{
+  display: flex;
+  flex-direction: column;
+  background-color: #111111;
+  height: 450px;
+}
+.bannerContainerText{
+  width: 70%;
+  padding-left: 65px;
+  padding-top: 65px;
+}
+/*Container with Three adjectives*/
+.adjectiveContainer{
+  display: flex;
+  flex-direction: row;
+  height: 65px;
+  width: 100%;
+  color: white;
+  background-color: #2b0071;
+  align-items: center;
+  justify-content: center;
+}
+.adjectiveContainerText{
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-    align-items: center;
-  width: 100%;
-  height: 60px;
-  color: white;
+  width: 70%;
 }
-
-.name{
-  margin-left: 29px;
-}
-
-.navigation{
-  display: flex;
-  flex-direction: row;
-  margin-right: 30px;
-    padding-right: 22px;
-}
-
-.navigation-work{
-  padding-right: 45px;
-}
-.name{
-  padding-left: 22px;
-}
-
-.content{
-  width: 100%;
-  height: 100%;
-  padding-top: 10vh;
+/*Quote*/
+.quoteContainer{
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  height: 180px;
+  width: 100%;
+  text-align: center;
+}
+.quoteContainerText{
+  width:60%;
+  line-height: 40px;
+  color: #999999;
+  font-style: italic;
+}
+/*Grid with Details and headers*/
+.aboutmeGrid{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 97%;
+}
+  .one{
+    display: flex;
+    height: 300px;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 55px;
+  }
+  .oneText,
+  .two,
+  .three{
+    width: 600px;
+  }
+  .aboutmeGrid div{
+    text-align: center;
+    line-height: 40px;
+  }
+  .aboutmeGrid h3{
+    padding-bottom: 25px;
+  }
+  .oneTwoGroup{
+    display: flex;
+    flex-direction: row;
+    height: 300px;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 80px;
+  }
+  .two{
+    padding-right: 60px;
+  }
+/*LinekdIn Footer*/
+
+.footer{
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: black;
+  height: 80px;
+  width: 100%;
+  margin-top: 20px;
 }
 
-@media screen and (max-width: 760px){
+.footer a {
+  text-decoration: underline;
+  color: white;
+}
 
+/*Media Adjustments*/
+@media screen and (min-width:365px) and (max-width:950px){
+  /*Font Adjustments*/
+  nav{
+    font-size: 14px;
+    font-weight: 500;
+  }
+  h3,
+  p{
+    font-size: 18px;
+    font-weight: 500;
+  }
+  h4{
+    font-size: 12px;
+    font-weight: 700;
+  }
+  h5{
+    font-size: 16px;
+    font-weight: 400;
+  }
+  /*Alignment Adjustments*/
+  .quoteContainer{
+    padding-top: 15px;
+    height: 90px;
+  }
+  .adjectiveContainerText{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 90%;
+  }
+  .quoteContainerText{
+    line-height: 20px;
+  }
+  .bannerContainer{
+    height: 300px;
+  }
+  .adjectiveContainer{
+    height: 35px;
+  }
+  .one{
+    display: flex;
+    height: 240px;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+  }
+  .oneText,
+  .two,
+  .three{
+    width: 400px;
+  }
+  .aboutmeGrid div{
+    text-align: center;
+    line-height: 30px;
+  }
+  .aboutmeGrid h3{
+    padding-bottom: 20px;
+  }
+  .two{
+    padding-right: 0px;
+  }
+  .oneTwoGroup{
+    display: flex;
+    flex-direction: column;
+    height: 500px;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 50px;
+  }
+  .three{
+    padding-top: 45px;
+  }
+}
+
+@media screen and (max-width:395px){
+  /*Font Adjustments*/
+  nav{
+    font-size: 10px;
+    font-weight: 500;
+  }
+  h4{
+    font-size: 8px;
+    font-weight: 700;
+  }
+  h5{
+    font-size: 10px;
+    font-weight: 400;
+  }
+  h3,
+  p{
+    font-size: 12px;
+    font-weight: 500;
+  }
+  /*Alignment Adjustments*/
+  .about,
+  .work{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 30px;
+    width: 60px;
+  }
+  .quoteContainer{
+    height: 90px;
+  }
+  .adjectiveContainerText{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 90%;
+  }
+  .quoteContainerText{
+    line-height: 20px;
+  }
+  .bannerContainer{
+    height: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+  }
+  .bannerContainerText{
+    text-align: center;
+    padding-top: 0px;
+    padding-left: 0px;
+  }
+  .adjectiveContainer{
+    height: 35px;
+  }
+  .aboutmeGrid{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 97%;
+  }
+    .one{
+      display: flex;
+      height: 150px;
+      width: 100%;
+      justify-content: center;
+      align-items: center;
+      padding-bottom: 0px;
+      padding-top: 10px
+    }
+    .oneText,
+    .two,
+    .three{
+      width: 280px;
+    }
+    .aboutmeGrid div{
+      text-align: center;
+      line-height: 20px;
+    }
+    .aboutmeGrid h3{
+      padding-bottom: 15px;
+    }
+    .oneTwoGroup{
+      display: flex;
+      flex-direction: column;
+      height: 400px;
+      width: 100%;
+      justify-content: center;
+      align-items: center;
+      padding-bottom: 10px;
+    }
+    .two{
+      padding-right: 0px;
+      padding-bottom: 25px;
+    }
+    .footer{
+      height: 30px;
+    }
 }
