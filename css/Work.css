@@ -35,16 +35,21 @@ h2 a{
     text-decoration: none;
     color: black;
 }
+
 nav{
-  font-size: 18px;
+  font-size: 22px;
   font-weight: 500;
 }
 .bannerContainer h1{
   color: #ff0062;
   padding-bottom: 30px;
 }
-.bannerContainer h2{
+.bannerContainer h2,p{
   color: white;
+}
+
+.bannerContainer p{
+  padding-top: 30px;
 }
 
 #content a {
@@ -106,7 +111,7 @@ p a {
   display: flex;
   flex-direction: row;
   justify-content: center;
-  width: 15%;
+  width: 180px;
   border-radius: 5px;
 }
 .about,
@@ -115,16 +120,14 @@ p a {
   align-items: center;
   justify-content: center;
   height: 30px;
-  width: 70px;
+  width: 90px;
 }
 .work{
   background-color: white;
   color: #111111;
-  padding-left: 6px;
 }
 .about{
   border-color: white;
-  padding-right: 6px;
 }
 /*Banner with Name and Tagline*/
 .bannerContainer h1{
@@ -186,6 +189,14 @@ MOBILE CSS
   .headerContaner{
     width: 70%;
   }
+  .portfolio{
+    margin-top: 30px;
+    padding-bottom: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
   h2{
     font-size: 20px;
     font-family: 'Montserrat', sans-serif;
@@ -199,7 +210,7 @@ MOBILE CSS
   }
 
   #content a {
-    color: rgb(38, 114, 204);
+    color: black;
     text-decoration: underline;
     font-family: 'Montserrat', sans-serif;
     padding-bottom: 140px;
@@ -344,7 +355,7 @@ MOBILE CSS
 
   .three :not(img){
     position: absolute;
-    width: 200px;
+    width: 100px;
     opacity: 0;
     transition: .3s;
   }
@@ -813,7 +824,7 @@ MOBILE CSS
   align-items: center;
   justify-content: center;
   background-color: black;
-  height: 80px;
+  height: 110px;
   width: 100%;
   margin-top: 20px;
 }
@@ -823,7 +834,7 @@ MOBILE CSS
   color: white;
 }
 .footer h4{
-  font-size: 1.3vw;
+  font-size: 20px;
   font-weight: 700;
 }
 
@@ -842,11 +853,26 @@ MOBILE CSS
   }
   /*Alignment Adjustments*/
   .bannerContainer{
-    height: 250px;
+    height: 275px;
+  }
+  .bannerContainerText{
+    width: 70%;
+    padding-left: 65px;
+    padding-top: 10px;
   }
 }
 
+
 @media screen and (max-width:395px){
+  .one :not(img),
+  .two :not(img),
+  .three :not(img),
+  .four :not(img){
+    opacity: 1;
+  }
+  #content a{
+    color: black;
+  }
   /*Font Adjustments*/
   nav{
     font-size: 10px;
@@ -856,7 +882,27 @@ MOBILE CSS
     font-size: 8px;
     font-weight: 700;
   }
+  .footer h4{
+    font-size: 12px;
+    font-weight: 700;
+  }
+  .nav{
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      width: 100px;
+      border-radius: 5px;
+    }
+    .about,
+    .work{
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 30px;
+      width: 50px;
+    }
   .bannerContainer{
+    padding-top: 15px;
     height: 150px;
     display: flex;
     align-items: center;
@@ -867,5 +913,11 @@ MOBILE CSS
     text-align: center;
     padding-top: 0px;
     padding-left: 0px;
+  }
+  .bannerContainerText h2,p{
+    color: white;
+  }
+  .bannerContainer p{
+    padding-top: 30px;
   }
 }
