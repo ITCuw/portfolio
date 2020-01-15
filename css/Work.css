@@ -52,12 +52,15 @@ nav{
   padding-top: 30px;
 }
 
+#content p {
+  color: black;
+}
 #content a {
   color: rgb(38, 114, 204);
   text-decoration: underline;
   font-family: 'Montserrat', sans-serif;
   font-weight: 400;
-  font-size: 14px;
+  font-size: 18px;
 }
 
 #content a:hover {
@@ -919,5 +922,23 @@ MOBILE CSS
   }
   .bannerContainer p{
     padding-top: 30px;
+  }
+}
+@media screen and (min-width: 1441px){
+  h1{
+    font-size: 75px;
+    font-weight: 700;
+  }
+  h2{
+    font-size: 57px;
+    font-weight: 600;
+  }
+  h4{
+    font-size: 20px;
+    font-weight: 700;
+  }
+  h5{
+    font-size: 30px;
+    font-weight: 400;
   }
 }
