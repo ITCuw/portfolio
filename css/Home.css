@@ -279,6 +279,9 @@ nav{
   .three{
     padding-top: 45px;
   }
+  .footer h4{
+    font-size: 15px;
+  }
 }
 
 @media screen and (max-width:395px){
